@@ -23,12 +23,19 @@
             font-size:1.8rem;
         }
         .video-wrap {
+            position:relative;
             flex:1;
         }
         .video-wrap iframe {
             width:100%;
             height:100%;
             border:none;
+        }
+        /* прозрачный слой, который блокирует клики */
+        .video-overlay {
+            position:absolute;
+            inset:0;
+            z-index:2;
         }
     </style>
 </head>
@@ -39,6 +46,7 @@
 
     <div class="video-wrap">
         <iframe src="https://football10tka.com/p2p-reserv/10tka5.php" allowfullscreen></iframe>
+        <div class="video-overlay"></div>
     </div>
 </body>
 </html>
