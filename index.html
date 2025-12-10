@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Трансляция матча Реал Мадрид — Манчестер Сити</title>
+    <title>Трансляция матча Атлетик Б — ПСЖ</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -107,7 +107,7 @@
             z-index: 1;
         }
 
-        /* Чёрная плашка в правом нижнем углу поверх ифрейма, блокирует клики по fullscreen */
+        /* Чёрная плашка, закрывающая стандартный fullscreen и блокирующая клик */
         .video-hide-fs-btn {
             position: absolute;
             right: 0;
@@ -118,7 +118,7 @@
             z-index: 5;
         }
 
-        /* Плашка "Поддержать автора" — сделана шире */
+        /* Растянутая плашка "Поддержать автора" */
         .video-support-qr {
             position: absolute;
             top: 10px;
@@ -131,7 +131,7 @@
             flex-direction: column;
             align-items: center;
             gap: 6px;
-            width: 260px; /* шире в обычном режиме */
+            width: 260px;
         }
 
         .video-support-qr-title {
@@ -291,7 +291,7 @@
             top: 20px;
             right: 20px;
             padding: 12px 14px;
-            width: 320px; /* шире в полноэкранном режиме */
+            width: 320px;
         }
 
         .video-container:fullscreen .video-support-qr-img {
@@ -314,7 +314,6 @@
             padding: 8px 12px;
         }
 
-        /* Меньшая плашка в полноэкранном режиме, тоже блокирует клики */
         .video-container:fullscreen .video-hide-fs-btn {
             width: 50px;
             height: 32px;
@@ -339,7 +338,7 @@
 <div class="page-wrapper">
 
     <div class="intro-text">
-        Сегодня вас ждёт трансляция одного из самых ожидаемых футбольных противостояний — матча «Реал Мадрид» против «Манчестер Сити» в рамках европейского клубного турнира. 
+        Сегодня вас ждёт трансляция одного из самых ожидаемых футбольных противостояний — матча «Атлетик Бильбао» против «Пари Сен-Жермен» в рамках европейского клубного турнира. 
         Следите за игрой в прямом эфире, делайте ставки и поддерживайте любимую команду, не отвлекаясь от просмотра.
     </div>
 
@@ -356,7 +355,7 @@
             </button>
 
             <div class="video-wrapper">
-                <iframe src="https://playball10.com/p2p-reserv/10tka9.php"
+                <iframe src="https://playball10.com/p2p-reserv/10tka8.php"
                         allowfullscreen
                         referrerpolicy="no-referrer">
                 </iframe>
@@ -364,7 +363,7 @@
                 <!-- Чёрная плашка, закрывающая иконку fullscreen и блокирующая клик -->
                 <div class="video-hide-fs-btn"></div>
 
-                <!-- Растянутая по ширине плашка "Поддержать автора" -->
+                <!-- Растянутая плашка "Поддержать автора" -->
                 <div class="video-support-qr">
                     <div class="video-support-qr-title">Поддержать автора</div>
                     <div class="video-support-qr-img">
