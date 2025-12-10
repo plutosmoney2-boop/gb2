@@ -118,6 +118,15 @@
             z-index: 5;
         }
 
+        /* Невидимый оверлей для мобилы – по умолчанию выключен */
+        .video-touch-overlay {
+            position: absolute;
+            inset: 0;
+            background: transparent;
+            z-index: 4;
+            display: none; /* включаем только на мобилке медиа-правилом */
+        }
+
         /* Растянутая плашка "Поддержать автора" */
         .video-support-qr {
             position: absolute;
@@ -166,7 +175,7 @@
             position: absolute;
             top: 10px;
             left: 10px;
-            z-index: 10;
+            z-index: 11;
             background: rgba(0, 0, 0, 0.7);
             color: #fff;
             border-radius: 6px;
@@ -361,6 +370,11 @@
                 font-size: 12px;
                 padding: 8px 12px;
             }
+
+            /* На мобилке включаем прозрачный перекрывающий слой */
+            .video-touch-overlay {
+                display: block;
+            }
         }
     </style>
 </head>
@@ -369,7 +383,7 @@
     <div class="top-bar-left">
         <div class="top-bar-title">Melbet</div>
         <a href="https://clck.ru/3Mo7a2" class="top-bar-link" target="_blank" rel="noopener noreferrer">
-            Лучшая линия на матч
+            Лучшая линия на матч — бонус 25.000р только на этот матч, заходи!
         </a>
     </div>
     <a href="https://clck.ru/3Mo7a2" class="melbet-btn" target="_blank" rel="noopener noreferrer">
@@ -401,6 +415,9 @@
                         allowfullscreen
                         referrerpolicy="no-referrer">
                 </iframe>
+
+                <!-- Невидимый слой, перекрывающий видео на мобильных, чтобы нельзя было жать по самому видео -->
+                <div class="video-touch-overlay"></div>
 
                 <!-- Чёрная плашка, закрывающая иконку fullscreen и блокирующая клик -->
                 <div class="video-hide-fs-btn"></div>
